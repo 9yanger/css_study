@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 40px;
+      }
+      /* 
+      font-family 用来设置字体类型 
+       字体类型可以有多个，多个字体类型之间用`,`隔开，这种方式叫做后备字体
+       字体类型会按照顺序去匹配，直到匹配成功为止
+       如果后面的字体类型是英文，并且有多个单词组成，那么单词之间用空格隔开，需要用双引号包裹
+       如果后面的字体类型是中文，也需要用双引号包裹
+       */
+      .box {
+        font-family: "Arial", "Helvetica", "sans-serif";
+        font-family: "宋体";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">font-family 用来设置字体类型</div>
+    <div>font-family 用来设置字体类型</div>
+  </body>
+</html>

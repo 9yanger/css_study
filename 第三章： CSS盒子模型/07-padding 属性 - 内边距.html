@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border: 2px solid blue;
+      /* 
+      padding 内边距指的是，盒子内容区与边框内壁之间的距离
+ */
+       /* padding: 10px;  四个方向的内边距都是 10px*/
+       /* 如何单独控制某一方向上的内边距 */
+       padding-top: 10px;/* 上边距 */
+       padding-right: 20px;/* 右边距 */
+       padding-bottom: 30px;/* 下边距 */
+       padding-left: 40px;/* 左边距 */
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border: 2px solid red;
+      /* 他的值有4种不同的写法
+      1.4个值 上 右 下 左
+      2.3个值 上 左右 下
+      3.2个值 上下 左右
+      4.1个值 上下左右
+ */
+       padding: 10px 20px 30px 40px;
+       padding: 10px 20px 30px;
+       padding: 10px 20px;
+       padding: 10px;
+       /* padding 的最佳实践：小属性是用来层叠大属性 */
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <div class="box">我是内容我是内容</div>
+  <div class="item"></div>
+</body>
+</html>

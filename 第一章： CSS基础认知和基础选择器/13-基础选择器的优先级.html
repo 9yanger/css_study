@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{color: pink;}
+        #box{
+          color: blue;
+        }
+        .box{
+          color: green;
+          font-size: 40px;
+        }
+        div{
+          color: orange;
+          background-color: yellow;
+        }
+      </style
+    </style>
+  </head>
+  <body>
+    <!-- 我们学过的选择器,以下是选择器的优先级，从高到低 -->
+    <!-- 行内样式> id选择器> class选择器> 标签选择器>*通配符选择器 单个选择器的优先级来看-->
+    <div id="box" class="box" style="color: red">我是什么颜色</div>
+    <div id="box" class="box">我是什么颜色</div>
+    <div id="box">我是什么颜色</div>
+    <div>我是什么颜色</div>
+    <p>我什么颜色</p>
+  </body>
+</html>

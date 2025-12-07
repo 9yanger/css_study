@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>标签选择器</title>
+    <!-- 标签选择器的最大特点就是选择范围大 -->
+    <!-- 主要应用场景：用来初始化标签的样式（清除掉标签不需要的默认样式）。 -->
+
+    <style>
+      /* 为什么浏览器要给标签添加默认样式，是因为突出当前这个标签的语义化 */
+      /* 但是在实际的开发中，不需要这些默认样式，所以要去掉 */
+      div {
+        color: red;
+      }
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>我是div</div>
+    <p>我是p</p>
+    <div>
+      <div>我是div</div>
+      <p>我是p</p>
+    </div>
+  </body>
+</html>

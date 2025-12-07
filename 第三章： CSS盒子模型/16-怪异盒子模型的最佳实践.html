@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 1px solid red;
+      padding: 20px;
+    }
+    .item {
+      /* 子元素的实际占位高正好等于 300px才正好放下
+      实际占位高=300=height+上下border+上下padding+margin
+      300=（）+4+10+0
+      求height的高=300-4-10-0=286px */
+      /* height: 286px; */
+      border: 2px solid blue;
+      padding: 5px;
+      height: 300px;/*可视高 外边距0 */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- 怪异盒子模型主要的应用场景是在 响应式开发和移动端开发
+   如果我们期望不管元素的 边距， 内边距如何变化，我们始终希望元素的可视宽和可视高不要变化
+   这种情况下，我们就可以把这个元素设置为怪异盒子模型 -->
+   <div class="box">
+    <div class="item">
+      怪异盒子模型主要的应用场景是在 响应式开发和移动端开发
+   如果我们期望不管元素的 边距， 内边距如何变化，我们始终希望元素的可视宽和可视高不要变化
+   这种情况下，我们就可以把这个元素设置为怪异盒子模型
+    </div>
+   </div>
+
+</body>
+</html>

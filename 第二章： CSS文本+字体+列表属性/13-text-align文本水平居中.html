@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        border: 1px solid red;
+      }
+      /* text-align 控制文字、 图片 、行内块级元素在水平位置
+    1.left 左对齐  默认值
+    2.right 右对齐
+    3.center 水平居中
+ */
+      .center {
+        text-align: center;
+      }
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .box {
+        text-align: center;
+      }
+      .box2 {
+        /* display: inline-block; */
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>text-align 行内内容水平居中</p>
+    <p class="center">text-align 行内内容水平居中</p>
+    <p class="left">text-align 行内内容水平居中</p>
+    <p class="right">text-align 行内内容水平居中</p>
+    <div class="box">
+      <img
+        src="C:\Users\Administrator\Pictures\Screenshots\屏幕截图 2025-04-19 121118.png"
+        alt=""
+      />
+
+      <div class="box2"></div>
+      <p>我是块级元素下面内容</p>
+    </div>
+  </body>
+</html>

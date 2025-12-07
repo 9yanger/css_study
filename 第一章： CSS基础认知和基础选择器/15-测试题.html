@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css" />
+    <style>
+      p {
+        color: blue; /* 蓝色 */
+      }
+      .col1 {
+        color: red; /* 红色 */
+      }
+      .col2 {
+        color: green; /* 绿色 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 要判断最终元素有的呈现效果，分为以下几个步骤搞定
+     1.找到页面中控制当前元素的css选择器有哪些 
+     2.要看这些选择中，谁的优先级最高 #box ,以优先级最高的为准
+     3.如果优先级是一样的，这就要看就近原则
+
+     如果你发现样式效果没有按你预期的展现，那你就要去找控制这个样式是css选择器
+     -->
+    <div id="box" class="col1">1-orange</div>
+    <p>2-blue</p>
+    <p class="col2 col1">3-green</p>
+    <p style="color: red" id="box">4-red</p>
+  </body>
+</html>

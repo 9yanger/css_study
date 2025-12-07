@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 控制文字的粗细
+    1.normal:默认值 正常大小 ，与400是一样的效果
+    2.bold: 加粗，与700是一样的效果
+    3.lighter: 细体，比父元素的值更细
+    4.bolder: 加粗，比父元素值更粗
+    5.可以用100-1000表示，数字越大，字越粗    
+    6.inherit: 继承父元素设置的字体粗细
+    */
+
+      .box {
+        font-size: 40px;
+      }
+      .normal {
+        font-weight: 400;
+        font-weight: normal;
+      }
+      .bold {
+        font-weight: 700;
+        font-weight: bold;
+      }
+      .container {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .container p {
+        font-weight: lighter;
+      }
+      .bolder {
+        font-weight: 500;
+        font-size: 40px;
+      }
+      .bolder p {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box normal">font-weight 用来控制页面中文字的粗细</div>
+    <div class="box bold">font-weight 用来控制页面中文字的粗细</div>
+    <div class="container">
+      我是父元素的文字
+      <p>我是子元素的文字，我要更细一点</p>
+    </div>
+    <div class="bolder">
+      我是父元素的文字
+      <p>我是子元素的文字，我要更细一点</p>
+    </div>
+  </body>
+</html>

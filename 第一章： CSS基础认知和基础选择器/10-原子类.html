@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 原子类 是定义了一个class类，这个类只定义一种样式，一类样式 */
+      .fs10 {
+        font-size: 10px;
+      }
+      .fs12 {
+        font-size: 12px;
+      }
+      .fs14 {
+        font-size: 14px;
+      }
+      .fs16 {
+        font-size: 16px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .center50 {
+        line-height: 50px;
+        text-align: center;
+      }
+      .center30 {
+        line-height: 30px;
+        text-align: center;
+      }
+      .green {
+        color: green;
+      }
+      p {
+        height: 50px;
+        border: 1px solid red;
+      }
+      div {
+        height: 30px;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="center50 fs12">我是居中文字</p>
+    <div class="center30 fs16 green">我是居中文字</div>
+    <!-- 
+  原子类
+  我们可以将所有常用字号 ，文字颜色,行高，外边距，宽，高等定义成一个单独的类
+  然后在html标签中按需选择使用-->
+    <!-- css框架思想  css进行架构 它会大大减少项目的体积 -->
+    <!-- 摇树优化  css框架定义-font-size: 16~100 但在我的项目中，我只用了12 14 16  这些字体大小   项目打包时没用到的摇掉-->
+  </body>
+</html>

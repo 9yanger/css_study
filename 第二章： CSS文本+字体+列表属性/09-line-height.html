@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 每一行的文字都在行高大小范围内中水平居中 */
+    /* 行高的属性值有以下几种写法：
+    1.px 单位 比较常用的
+    2.数值表示法 2，3，1.5 行高的大小为当前font-size的倍数
+    3.百分比表示法 200% 行高相对于font-size而言
+    4.normal 浏览器默认值  这个行高大概是1.2 这种在实际开发中基本不用*/
+
+    .box{
+      border: 1px solid red;
+      /* height: 50px; */
+      line-height: 50px;
+    }
+/* 行高的最佳实践：
+推荐在body 中设置line-height统一为数值，比如1.5，来控制整个页面所有文字的默认行高
+主要行高值为：1.5 1.25 1.75 */
+*{
+  margin: 0;
+}
+body{
+  line-height: 1.5;
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高 line-height 行高
+  </div>
+  <h1>我是一级标题</h1>
+  <p>我是描述</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 这里的空格表示的就是后代 */
+    /* 后代指的不一定是子元素，后代指的是当前元素内部的元素，不管有多深都叫后代 */
+    .box h3{
+      color: red;
+    }
+    .box p span{
+      color: blue;
+    }
+    .box span{
+      background-color: yellow;
+    }
+    p span{
+      border: 1px solid red;
+    }
+    .box .title span {
+      background-color: orange;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 后代选择器-属于复合选择器，它是由多个选择器组合而成的选择器 -->
+   <div class="box">
+      <h3 class="title">什么是css<span>选择器</span></h3>
+      <p>
+        <span>选择器：</span>
+        主要是用来选择我们想要选中的元素，选中后，我们就可以为这个元素添加css样式了
+      </p>
+      <div class="title">
+        <p><span> span </span></p>
+      </div>
+   </div>
+
+   <h3>我是一个h3</h3>
+   <p><span>我是span</span></p>
+   <span>我是span</span>
+</body>
+</html>

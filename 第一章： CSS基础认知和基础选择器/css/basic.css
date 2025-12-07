@@ -1,0 +1,8 @@
+/* basic.css 文件 */
+#box {
+  color: orange; /* 橘色 */
+}
+.col1 {
+  color: pink; /* 粉色 */
+  font-size: 30px;
+}

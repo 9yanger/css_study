@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* font 复合写法 注意事项：
+    1.font-style 和font-weight 必须写在font-size 前面
+    2.任何没有指定的属性值，都会采用默认值，会把前面定义的小属性值覆盖掉
+    3.font在设置值时，一定要设置font-size和font-family，否则不生效
+*/
+    p{
+      border: 1px solid red;
+      /* 字体倾斜 加粗 字体16px  字体行高1.5  字体类型 */
+      font: italic bold 16px/1.5 Arial,sans-serif;
+      /* font-weight: bold;
+      font-style: italic;
+      font : 16px/1.5 Arial,sans-serif; */
+    }
+  </style>
+</head>
+<body>
+  <p>font 复合写法</p>
+</body>
+</html>

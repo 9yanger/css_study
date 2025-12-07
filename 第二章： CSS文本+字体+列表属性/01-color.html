@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+     color的属性值有以下四种写法 
+     1.英文单词中的颜色 red pink blue 在实际的企业开发过程中不常用，仅用于平时的学习与测试
+     2.十六进制表示法 #ff0000 #00ff00 #0000ff 在实际的企业开发中常用,如果两两相同，能组成三级，可以简写
+     3.rgb表示法 rgb是光学显示器三原色， red红色 green绿色 blue蓝色 每个值的取值范围是0-255
+     4.rgba表示法 rgba是rgb的扩展，可以设置颜色的透明度，取值范围是0-1，0完全透明 1完全不透明
+     5.hsl表示法 hsl是HSB的扩展，hue色相，saturation饱和度，lightness亮度，取值范围是0-100
+
+
+     */
+      .box {
+        color: #cc0066;
+        color: #ff1eff;
+        color: #ddaabb; /* 简写 #dab 有三组，两两相同 */
+        color: #abc;
+        /* #000 黑色 #fff 白色  #ccc 灰色 #333 深灰色 #f5f5f5 浅灰色 */
+        color: rgb(255, 0, 255);
+        color: rgb(30, 50, 70);
+        color: rgba(255, 0, 255, 0.5);
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+      }
+      .bg-color1 {
+        background-color: rgba(65, 34, 70, 0.5);
+      }
+      .bg-color2 {
+        background-color: rgba(30, 194, 139, 0.5);
+        margin-top: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">color 属性用来控制文本的颜色</div>
+    <div class="box bg-color1"></div>
+    <div class="box bg-color2"></div>
+  </body>
+</html>

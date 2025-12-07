@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css样式的优先级</title>
+    <style>
+       h2{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: brown;"> 内嵌样式 </h2>
+    <p>书写位置：写在head结束标签前面的style标签中</p>
+    <p>作用范围：只针对当前页面</p>
+    <p>优先级：是由书写位置和选择器的优先级来决定</p>
+    <p>使用场景：小案例、对网站首次打开速度很高的网页（把首屏的css样式写在内嵌样式中）</p>
+    <p>问题：没有缓存</p>
+    <h2> 外链样式 </h2>
+    <p>书写位置：将 CSS 单独存为 .css 文件，然后使用 `<link>`标签引入到页面中</p>
+    <p>作用范围：多个页面</p>
+    <p>优先级：是由书写位置和选择器的优先级来决定</p>
+    <p>使用场景：在实际开发项目中，外链样式是首先，公众样式的提取</p>
+    <p>问题：有缓存</p>
+    <h2> 行内样式 </h2>
+    <p>书写范围：直接放在html标签是style 属性中</p>
+    <p>优先级：优先级是三者中最高的</p>
+    <p>作用范围：配合JS完成特定元素样式的修改</p>
+
+
+  </body>
+</html>

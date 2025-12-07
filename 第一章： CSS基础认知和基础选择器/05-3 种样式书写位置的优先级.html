@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css样式的优先级</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <style>
+      div {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="color: aqua">我是div标签</div>
+    <div>我也是</div>
+    <!-- 
+    到底是什么颜色
+      行内样式优先级>内联样式和外链样式
+      内联样式外链样式的优先级，主要看选择器的优先级
+      在这个案例中，都是通过 div 标签来选择元素的，所以选择器的优先级是一样的
+      就近原则
+      样式的优先级：
+        1.行内样式优先级最高
+        2.内联样式优先级高于外链样式
+        3.外链样式优先级高于内联样式
+        4.内联样式和外链样式优先级相同，则后定义的样式优先级更高
+      选择器的优先级：
+        1.标签选择器（div、p、h1）优先级最低
+        2.类选择器（.box、.active）优先级中等
+        3.id选择器（#box、#active）优先级最高
+        4.如果选择器的优先级相同，则后定义的样式优先级更高
+-->
+  </body>
+</html>

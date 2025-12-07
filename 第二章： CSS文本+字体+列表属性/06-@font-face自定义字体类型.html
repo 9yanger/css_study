@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "阿里妈妈东方大楷 Regular";
+        font-weight: 400;
+        src: url("//at.alicdn.com/wf/webfont/8Zcrrv0rEQaB/BApKltyC2BJ6.woff2")
+            format("woff2"),
+          url("//at.alicdn.com/wf/webfont/8Zcrrv0rEQaB/wVyumCOtQG6P.woff")
+            format("woff");
+        font-variation-settings: normal;
+        font-display: swap;
+      }
+
+      .webfont {
+        font-family: "阿里妈妈东方大楷 Regular";
+        font-variation-settings: normal; /* Chrome 140 以下版本需要 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- @font-face  自定义字体，当我们想用一些特殊的字体时，而浏览器又不支持，那么这种情况下，使用自定义字体，分为以下几个步骤：
+   1.准备字体文件
+    -->
+    <p class="webfont">时光邮局</p>
+  </body>
+</html>

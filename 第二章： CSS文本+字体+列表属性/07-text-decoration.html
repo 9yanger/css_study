@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* text-decoration 修饰线，它有以下几个值
+    1. underline 下划线
+    2. overline 上划线
+    3. line-through 删除线
+    4. none 无修饰线
+    text-decoration: 默认值是none
+    text-decoration  修饰线是以下四个小属性的复合写法（简写）
+*/
+    p {
+      font-size: 30px;
+      /* text-decoration: underline; */
+      text-decoration: line-through;
+      text-decoration: none;
+    }
+    h2 {
+      /* 定义修饰线的类型 */
+      text-decoration-line: underline;
+      /* 定义修饰线的颜色 */
+      text-decoration-color: red;
+      /* 定义修饰线的样式 */
+      text-decoration-style: solid;
+      /* 粗细 */
+      text-decoration-thickness: 5px;
+      /* 默认 颜色黑色 实现 solid */
+      /* text-decoration: underline */
+    }
+
+  </style>
+</head>
+<body>
+  <p>text-decoration 修饰线</p>
+  <h2>text-decoration 修饰线</h2>
+</body>
+</html>

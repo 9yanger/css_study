@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 251, 255);
+        padding: 50px;
+        border: 50px solid blue;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+  标准盒子模型下：
+  盒子模型的内容区大小= 就是我们设置的 width和height 形成的矩形区大小
+  盒子模型的可视区大小= 可视宽与可视高形成的矩形大小
+  可视宽=weight + 左右padding + 左右border
+  可视高=height + 上下padding + 上下border
+  盒子模型的实际占位大小= 占位宽与占位高形成的矩形大小
+  占位宽=width + 左右padding + 左右border+ 左右margin
+  占位高=height + 上下padding + 上下border+ 上下margin
+   -->
+    <div class="box">我是内容</div>
+  </body>
+</html>

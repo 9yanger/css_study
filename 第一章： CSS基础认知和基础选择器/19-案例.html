@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*清除默认样式，采用标签选择*/
+      ul {
+        list-style: none; /* 去掉列表前的小圆点 */
+      }
+      a {
+        text-decoration: none; /* 去掉超链接的下划线 */
+        color: red;
+      }
+      ul li {
+        color: #666;
+      }
+      /* ul li .text-red {
+      color: red;
+    }
+    ul li .text-blue {
+      color: blue;
+    } */
+      .text-red {
+        color: red;
+      }
+      .text-blue {
+        color: blue;
+      }
+      ul li span {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 19-案例.html -->
+    <h3>本章CSS重难点</h3>
+    <ul>
+      <li><span class="text-red">1.</span>区分css注释与html注释</li>
+      <li><span class="text-blue">2.</span>css样式的三种书写</li>
+      <li><span>3.</span>id与class选择器的命名规则</li>
+      <li><span>4.</span>id与class选择器、标签选择器、通配符选择器四种选择器和行内样式的用法和优先级</li>
+      <li><span>5.</span>首屏优化策略：首屏样式会考虑内联样式书写</li>
+      <li><span>6.</span>原子化类：把css样式细化成原子类，一个类只写一类样式</li>
+    </ul>
+    <p>掌握本节课的重难点</p>
+    <p>本节课的教案已上传到
+      <a href="https://github.com" class="text-red">我的博客</a>
+      点击跳转
+    </p>
+  </body>
+</html>

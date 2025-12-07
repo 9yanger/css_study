@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: khaki;
+        margin-bottom: 100px;
+      }
+      .box2 {
+        background-color: blue;
+        /* margin-top: 50px; */
+        /*1. display: inline-block; */
+        /*2. margin-top: 150; */
+        padding: 50px;
+        /* border: 1px solid red; */
+      }
+      .wrap {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        /* margin: 130px; */
+        /* 1.overflow: hidden; */
+        /* 2.border: 1px solid transparent*/
+        padding-top: 50px;
+      }
+      .wrap .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* margin-top: 50px; */
+        /* margin-top: -50px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item"></div>
+    </div>
+    <!-- 第二种合并问题:指的是父子元素之间的外边距合并问题
+    子元素的上外边距会合并父元素的上外边距上面去 
+    解决方案:
+    1.给父元素加上 overflow:hidden;  BFC   里面的元素未超出父元素可使用
+    2.给父元素加一像素透明的边框   计算时要加1px
+    3.把子元素的上外边距去掉,给父元素加上内边距来实现
+-->
+    <!-- margin 的上下外边距塌陷问题：
+   第一种：指的是两个兄弟元素，在垂直方向上的上下外边距发生合并现象
+   上一个元素的下外边距与下一个元素的上外边距会发生合并 
+   合并原则：以两者中最大的值为主
+   解决方案：
+   1.给任何一个元素加上 display：inlin-block;  BFC
+   2.我们把外边距加在一个元素上
+   3.我们可以把其中的一个元素的外边距改为内边距-->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+  </body>
+</html>
