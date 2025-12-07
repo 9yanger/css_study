@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: khaki;
+        /* display: none;将元素隐藏 */
+        /* visibility: hidden;将元素隐藏 但是元素还在页面上 */
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .display {
+        /* 
+      1.它会将自身和里面的所有子元素都隐藏
+      2.他隐藏后，是不会占据页面空间的
+ */
+        display: none;
+      }
+      .visibility {
+        /* 
+      1.它会将自身和里面的所有子元素都隐藏，但子孙加上 visibility: visible;时，子孙可见
+      2.他隐藏后，仍占据页面空间的
+ */
+        visibility: hidden;
+      }
+      .item{
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box display"> -->
+    <div class="box visibility">
+      display 隐藏元素
+      <div class="item"></div>
+    </div>
+    <h3>我是h3</h3>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box span {
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        display: inline-block; /*行内块元素*/
+        /* 为什么会产生空白间隙 */
+      }
+      .box {
+        /* font-size: 100px; */
+        /* font-size: 0; */
+        border: 2px solid blue;
+        /* display: inline-block; Bfc */
+        /* overflow: hidden; */
+        /* display: flex; */
+
+      }
+      .box span {
+        /* font-size: 16px; */
+        /*浮动具体-- 贴靠性*/
+        /* 带来问题 盒子塌陷*/
+        float: left;
+      }
+      .box img{
+        /* float: left; */
+        /* 最常见的做法：就是把图片设置为块级元素 */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 第一种方案：把父元素的font-size设置为0，同时要单独设置元素本身的font-size大小 
+         第二种方案：给子元素加上浮动，同时要解决浮动带来的高度塌陷问题（bfc) 清除浮动-->
+    <div class="box">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+    </div>
+    <div class="box">
+      <img src="./paperwall_3.jpg" alt="">
+    </div>
+  </body>
+</html>

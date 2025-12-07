@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        /* div默认是块级元素 block display：block */
+        display: inline-block; /*行内块元素 inline-block 在水平排列，放不下时换行 */
+        display: inline;/*内联元素 由内容决定大小*/
+      }
+      span{
+        /* span默认是行内元素 */
+        background-color:yellow ;
+        display: block;/*转成块级元素*/
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">111</div>
+    <div class="box">111</div>
+    <div class="box">111</div>
+    <div class="box">111</div>
+    <span>我是span</span>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 设置 width、height 属性是无效的。其宽高随其内容大小而撑开。 */
+      a {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="">我是a标签我是a标签我是a标签我是a标签我是a标签</a>
+    <span
+      >我是span标签我是span标签我是span标签我是span标签我是span标签我是span标签</span
+    >
+    <!-- 行内元素里只能放文本或其它行内元素 ,下面的代码是错误的 -->
+    <!-- <span>
+      <p></p>
+      <div></div>
+    </span> -->
+    <span>文字 <span></span> <i></i></span>
+    <a href="">a标签不能放a标签</a>
+  </body>
+</html>

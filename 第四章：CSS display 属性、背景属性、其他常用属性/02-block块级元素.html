@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 500px;/*在标准盒子模型下，width就是内容区宽*/
+      height: 200px;
+      background-color: rgb(251, 255, 0);
+      padding: 20px;
+      border: 20px solid red;
+    }
+    div{
+      /* width: 100px; */
+      height: 100px;
+      background-color: rebeccapurple;
+    }
+    .item{
+      height: 100px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- 块级元素里可以放任意类型元素 -->
+    <div class="item"></div>
+    <span></span>
+    <a href=""></a>
+    <img src="" alt="">
+    <h3></h3>
+  </div>
+  <div>我是div块级元素</div>
+  <p>我是p标签</p>
+  <!--文字类标签内不能放其他元素 p标签和h1~h6标签内不能放p和div标签  -->
+  <span>我是span标签</span>
+</body>
+</html>
